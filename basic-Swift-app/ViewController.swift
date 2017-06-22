@@ -26,6 +26,9 @@ class ViewController: UIViewController {
     
     @IBAction func addOneButton(_ sender: UIButton) {
         currentCount = currentCount + 1
+        
+        print("Hola mundo")
+        
         outputLabel2.text = "The button has been clicked \(currentCount) number of times"
         outputLabel2.textColor = UIColor.red
     }
