@@ -33,6 +33,21 @@ class ViewController: UIViewController {
         
         print(arreglo.joined(separator: ", "))
         
+        do {
+        
+            let data = try JSONSerialization.data(withJSONObject: arreglo)
+            
+            print(data)
+        
+            let string = NSString(data: data, encoding: String.Encoding.utf8.rawValue)
+            
+            print(string as Any)
+            
+        } catch {
+            
+            print("Catch")
+            
+        }
         outputLabel2.text = "The button has been clicked \(currentCount) number of times"
         outputLabel2.textColor = UIColor.red
     }
