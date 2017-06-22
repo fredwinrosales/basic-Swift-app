@@ -29,6 +29,10 @@ class ViewController: UIViewController {
         
         print("Hola mundo")
         
+        let arreglo = ["Swift", "Objective-C", "C++"]
+        
+        print(arreglo.joined(separator: ", "))
+        
         outputLabel2.text = "The button has been clicked \(currentCount) number of times"
         outputLabel2.textColor = UIColor.red
     }
