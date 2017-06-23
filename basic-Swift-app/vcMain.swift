@@ -15,12 +15,12 @@ class vcMain: UIViewController {
     
     @IBAction func btnSave()
     {
-        print("Save Button Pressed")
+        print("Save Button Pressed \(String(describing: txtUsername.text))")
     }
     
     @IBAction func btnLoad()
     {
-        print("Load Button Pressed")
+        print("Load Button Pressed \(String(describing: txtPassword.text))")
     }
     
     override func viewDidLoad() {
