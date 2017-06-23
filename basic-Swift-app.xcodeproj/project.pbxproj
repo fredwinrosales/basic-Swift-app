@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A154F6F71EFC87AC00A9C685 /* vcMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A154F6F61EFC87AC00A9C685 /* vcMain.swift */; };
+		A154F6FB1EFCA45800A9C685 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A154F6F91EFCA45800A9C685 /* Model.xcdatamodeld */; };
 		A176F13E1EF91BF600F23CA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A176F13D1EF91BF600F23CA0 /* AppDelegate.swift */; };
 		A176F1401EF91BF600F23CA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A176F13F1EF91BF600F23CA0 /* ViewController.swift */; };
 		A176F1431EF91BF600F23CA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A176F1411EF91BF600F23CA0 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		A154F6F61EFC87AC00A9C685 /* vcMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vcMain.swift; sourceTree = "<group>"; };
+		A154F6FA1EFCA45800A9C685 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		A176F13A1EF91BF600F23CA0 /* basic-Swift-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "basic-Swift-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A176F13D1EF91BF600F23CA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A176F13F1EF91BF600F23CA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 		A176F13C1EF91BF600F23CA0 /* basic-Swift-app */ = {
 			isa = PBXGroup;
 			children = (
+				A154F6F91EFCA45800A9C685 /* Model.xcdatamodeld */,
 				A176F13D1EF91BF600F23CA0 /* AppDelegate.swift */,
 				A176F13F1EF91BF600F23CA0 /* ViewController.swift */,
 				A176F1411EF91BF600F23CA0 /* Main.storyboard */,
@@ -148,6 +151,7 @@
 				A176F1401EF91BF600F23CA0 /* ViewController.swift in Sources */,
 				A154F6F71EFC87AC00A9C685 /* vcMain.swift in Sources */,
 				A176F13E1EF91BF600F23CA0 /* AppDelegate.swift in Sources */,
+				A154F6FB1EFCA45800A9C685 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +318,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A154F6F91EFCA45800A9C685 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A154F6FA1EFCA45800A9C685 /* Model.xcdatamodel */,
+			);
+			currentVersion = A154F6FA1EFCA45800A9C685 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A176F1321EF91BF600F23CA0 /* Project object */;
 }

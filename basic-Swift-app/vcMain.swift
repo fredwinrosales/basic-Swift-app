@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class vcMain: UIViewController {
 
@@ -15,12 +16,54 @@ class vcMain: UIViewController {
     
     @IBAction func btnSave()
     {
-        print("Save Button Pressed \(String(describing: txtUsername.text))")
+        let addDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        let context = addDelegate.persistentContainer.viewContext
+        
+        let newUser = NSEntityDescription.insertNewObject(forEntityName: "Users", into: context)
+        
+        newUser.setValue(txtUsername.text, forKey: "username")
+        
+        newUser.setValue(txtPassword.text, forKey: "password")
+        
+        do{
+            try context.save()
+            print("SAVED")
+        }catch{
+            //ERROR
+        }
     }
     
     @IBAction func btnLoad()
     {
-        print("Load Button Pressed \(String(describing: txtPassword.text))")
+        let addDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        let context = addDelegate.persistentContainer.viewContext
+        
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
+        
+        request.returnsObjectsAsFaults = false
+        
+        do{
+            let results = try context.fetch(request)
+            
+            if results.count > 0
+            {
+                for result in results as! [NSManagedObject]
+                {
+                    if let username = result.value(forKey: "username") as? String
+                    {
+                        print (username)
+                    }
+                    if let password = result.value(forKey: "password") as? String
+                    {
+                        print (password)
+                    }
+                }
+            }
+        }catch{
+            //ERROR
+        }
     }
     
     override func viewDidLoad() {
