@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 
+var pets = ["dog", "cat", "rabbit"]
+
 class vcMain: UIViewController {
 
     @IBOutlet var txtUsername: UITextField!
