@@ -14,6 +14,8 @@
 		A176F1431EF91BF600F23CA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A176F1411EF91BF600F23CA0 /* Main.storyboard */; };
 		A176F1451EF91BF600F23CA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A176F1441EF91BF600F23CA0 /* Assets.xcassets */; };
 		A176F1481EF91BF600F23CA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A176F1461EF91BF600F23CA0 /* LaunchScreen.storyboard */; };
+		A18412651EFF5B8F00C2F074 /* Storyboard2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A18412641EFF5B8F00C2F074 /* Storyboard2.storyboard */; };
+		A18412671EFF5C5100C2F074 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18412661EFF5C5100C2F074 /* TableViewController.swift */; };
 		A18698A31EFC7B520098C19D /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A18698A21EFC7B520098C19D /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		A176F1441EF91BF600F23CA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A176F1471EF91BF600F23CA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A176F1491EF91BF600F23CA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A18412641EFF5B8F00C2F074 /* Storyboard2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard2.storyboard; sourceTree = "<group>"; };
+		A18412661EFF5C5100C2F074 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		A18698A21EFC7B520098C19D /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +74,8 @@
 				A176F1491EF91BF600F23CA0 /* Info.plist */,
 				A18698A21EFC7B520098C19D /* Storyboard.storyboard */,
 				A154F6F61EFC87AC00A9C685 /* vcMain.swift */,
+				A18412641EFF5B8F00C2F074 /* Storyboard2.storyboard */,
+				A18412661EFF5C5100C2F074 /* TableViewController.swift */,
 			);
 			path = "basic-Swift-app";
 			sourceTree = "<group>";
@@ -138,6 +144,7 @@
 				A18698A31EFC7B520098C19D /* Storyboard.storyboard in Resources */,
 				A176F1451EF91BF600F23CA0 /* Assets.xcassets in Resources */,
 				A176F1431EF91BF600F23CA0 /* Main.storyboard in Resources */,
+				A18412651EFF5B8F00C2F074 /* Storyboard2.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +158,7 @@
 				A176F1401EF91BF600F23CA0 /* ViewController.swift in Sources */,
 				A154F6F71EFC87AC00A9C685 /* vcMain.swift in Sources */,
 				A176F13E1EF91BF600F23CA0 /* AppDelegate.swift in Sources */,
+				A18412671EFF5C5100C2F074 /* TableViewController.swift in Sources */,
 				A154F6FB1EFCA45800A9C685 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
